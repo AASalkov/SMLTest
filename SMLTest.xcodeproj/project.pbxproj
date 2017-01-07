@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F3BADFC1E203C08007FA2BA /* RecycleSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3BADFB1E203C08007FA2BA /* RecycleSettingsViewController.swift */; };
+		2F3BADFE1E203E7D007FA2BA /* RecycleSettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3BADFD1E203E7D007FA2BA /* RecycleSettingsInteractor.swift */; };
+		2F3BAE001E203E9F007FA2BA /* RecycleSettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3BADFF1E203E9F007FA2BA /* RecycleSettingsPresenter.swift */; };
+		2F3BAE021E203EC2007FA2BA /* RecycleSettingsPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3BAE011E203EC2007FA2BA /* RecycleSettingsPresenterProtocol.swift */; };
+		2F3BAE041E203EE1007FA2BA /* RecycleSettingsInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3BAE031E203EE1007FA2BA /* RecycleSettingsInteractorProtocol.swift */; };
+		2F3BAE061E203EF6007FA2BA /* RecycleSettingsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3BAE051E203EF6007FA2BA /* RecycleSettingsAssembly.swift */; };
+		2F3BAE081E20E996007FA2BA /* RecycleSettingsViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3BAE071E20E996007FA2BA /* RecycleSettingsViewControllerProtocol.swift */; };
+		2F3BAE0B1E20EEF4007FA2BA /* RecycleSettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3BAE0A1E20EEF4007FA2BA /* RecycleSettingsTableViewCell.swift */; };
+		2F414DFF1E1E499100F10538 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F414DFE1E1E499100F10538 /* Extensions.swift */; };
+		2F414E011E1E513800F10538 /* RecycleDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F414E001E1E513800F10538 /* RecycleDetailInteractor.swift */; };
+		2F414E031E1E514E00F10538 /* RecycleDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F414E021E1E514E00F10538 /* RecycleDetailPresenter.swift */; };
+		2F414E051E1E517200F10538 /* RecycleDetailAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F414E041E1E517200F10538 /* RecycleDetailAssembly.swift */; };
+		2F414E071E1E51D800F10538 /* RecycleDetailInterctorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F414E061E1E51D800F10538 /* RecycleDetailInterctorProtocol.swift */; };
+		2F414E091E1E51FE00F10538 /* RecycleDetailPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F414E081E1E51FE00F10538 /* RecycleDetailPresenterProtocol.swift */; };
+		2F414E0B1E1E521B00F10538 /* RecycleDetailViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F414E0A1E1E521B00F10538 /* RecycleDetailViewControllerProtocol.swift */; };
+		2F65F6701E211F0A0069B359 /* Recycle.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F65F66E1E211F0A0069B359 /* Recycle.storyboard */; };
+		2F65F6721E2126860069B359 /* LogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F65F6711E2126860069B359 /* LogModel.swift */; };
+		2F88AE691E1BBEDB00FAFA7F /* RecycleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F88AE681E1BBEDB00FAFA7F /* RecycleTableViewCell.swift */; };
+		2F88AE701E1BD8F600FAFA7F /* RecycleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F88AE6F1E1BD8F600FAFA7F /* RecycleDetailViewController.swift */; };
+		2F9AD32B1E1691E400C436D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9AD32A1E1691E400C436D4 /* AppDelegate.swift */; };
+		2F9AD3321E1691E400C436D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F9AD3311E1691E400C436D4 /* Assets.xcassets */; };
+		2F9AD3351E1691E400C436D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F9AD3331E1691E400C436D4 /* LaunchScreen.storyboard */; };
+		2F9AD3401E1B950700C436D4 /* RecycleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9AD33F1E1B950700C436D4 /* RecycleInteractor.swift */; };
+		2F9AD3421E1B951C00C436D4 /* RecycleRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9AD3411E1B951C00C436D4 /* RecycleRouting.swift */; };
+		2F9AD3441E1B953300C436D4 /* RecyclePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9AD3431E1B953300C436D4 /* RecyclePresenter.swift */; };
+		2F9AD3461E1B954800C436D4 /* RecycleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9AD3451E1B954800C436D4 /* RecycleAssembly.swift */; };
+		2F9AD34C1E1B963200C436D4 /* RecycleRoutingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9AD34B1E1B963200C436D4 /* RecycleRoutingProtocol.swift */; };
+		2F9AD34E1E1B965C00C436D4 /* RecyclePresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9AD34D1E1B965C00C436D4 /* RecyclePresenterProtocol.swift */; };
+		2F9AD3501E1B967A00C436D4 /* RecycleInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9AD34F1E1B967A00C436D4 /* RecycleInteractorProtocol.swift */; };
+		2F9AD3521E1B969200C436D4 /* RecycleTableViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9AD3511E1B969200C436D4 /* RecycleTableViewControllerProtocol.swift */; };
+		2F9AD3571E1B980A00C436D4 /* RecycleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9AD3561E1B980A00C436D4 /* RecycleTableViewController.swift */; };
+		2F9AD35A1E1B9A3700C436D4 /* RecycleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9AD3591E1B9A3700C436D4 /* RecycleModel.swift */; };
+		2F9AD35D1E1B9C6C00C436D4 /* RecycleDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9AD35C1E1B9C6C00C436D4 /* RecycleDataManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2F3BADFB1E203C08007FA2BA /* RecycleSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecycleSettingsViewController.swift; sourceTree = "<group>"; };
+		2F3BADFD1E203E7D007FA2BA /* RecycleSettingsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecycleSettingsInteractor.swift; sourceTree = "<group>"; };
+		2F3BADFF1E203E9F007FA2BA /* RecycleSettingsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecycleSettingsPresenter.swift; sourceTree = "<group>"; };
+		2F3BAE011E203EC2007FA2BA /* RecycleSettingsPresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecycleSettingsPresenterProtocol.swift; sourceTree = "<group>"; };
+		2F3BAE031E203EE1007FA2BA /* RecycleSettingsInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecycleSettingsInteractorProtocol.swift; sourceTree = "<group>"; };
+		2F3BAE051E203EF6007FA2BA /* RecycleSettingsAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecycleSettingsAssembly.swift; sourceTree = "<group>"; };
+		2F3BAE071E20E996007FA2BA /* RecycleSettingsViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecycleSettingsViewControllerProtocol.swift; sourceTree = "<group>"; };
+		2F3BAE0A1E20EEF4007FA2BA /* RecycleSettingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecycleSettingsTableViewCell.swift; sourceTree = "<group>"; };
+		2F414DFE1E1E499100F10538 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		2F414E001E1E513800F10538 /* RecycleDetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecycleDetailInteractor.swift; sourceTree = "<group>"; };
+		2F414E021E1E514E00F10538 /* RecycleDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecycleDetailPresenter.swift; sourceTree = "<group>"; };
+		2F414E041E1E517200F10538 /* RecycleDetailAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecycleDetailAssembly.swift; sourceTree = "<group>"; };
+		2F414E061E1E51D800F10538 /* RecycleDetailInterctorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecycleDetailInterctorProtocol.swift; sourceTree = "<group>"; };
+		2F414E081E1E51FE00F10538 /* RecycleDetailPresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecycleDetailPresenterProtocol.swift; sourceTree = "<group>"; };
+		2F414E0A1E1E521B00F10538 /* RecycleDetailViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecycleDetailViewControllerProtocol.swift; sourceTree = "<group>"; };
+		2F65F66F1E211F0A0069B359 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Recycle.storyboard; sourceTree = "<group>"; };
+		2F65F6711E2126860069B359 /* LogModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogModel.swift; sourceTree = "<group>"; };
+		2F88AE681E1BBEDB00FAFA7F /* RecycleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecycleTableViewCell.swift; sourceTree = "<group>"; };
+		2F88AE6F1E1BD8F600FAFA7F /* RecycleDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecycleDetailViewController.swift; sourceTree = "<group>"; };
+		2F9AD3271E1691E400C436D4 /* SMLTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMLTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F9AD32A1E1691E400C436D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2F9AD3311E1691E400C436D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F9AD3341E1691E400C436D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2F9AD3361E1691E400C436D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F9AD33F1E1B950700C436D4 /* RecycleInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecycleInteractor.swift; sourceTree = "<group>"; };
+		2F9AD3411E1B951C00C436D4 /* RecycleRouting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecycleRouting.swift; sourceTree = "<group>"; };
+		2F9AD3431E1B953300C436D4 /* RecyclePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecyclePresenter.swift; sourceTree = "<group>"; };
+		2F9AD3451E1B954800C436D4 /* RecycleAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecycleAssembly.swift; sourceTree = "<group>"; };
+		2F9AD34B1E1B963200C436D4 /* RecycleRoutingProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecycleRoutingProtocol.swift; sourceTree = "<group>"; };
+		2F9AD34D1E1B965C00C436D4 /* RecyclePresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecyclePresenterProtocol.swift; sourceTree = "<group>"; };
+		2F9AD34F1E1B967A00C436D4 /* RecycleInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecycleInteractorProtocol.swift; sourceTree = "<group>"; };
+		2F9AD3511E1B969200C436D4 /* RecycleTableViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecycleTableViewControllerProtocol.swift; sourceTree = "<group>"; };
+		2F9AD3561E1B980A00C436D4 /* RecycleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecycleTableViewController.swift; sourceTree = "<group>"; };
+		2F9AD3591E1B9A3700C436D4 /* RecycleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecycleModel.swift; sourceTree = "<group>"; };
+		2F9AD35C1E1B9C6C00C436D4 /* RecycleDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecycleDataManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F9AD3241E1691E400C436D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F3BADF01E2024DC007FA2BA /* RecycleSettings */ = {
+			isa = PBXGroup;
+			children = (
+				2F3BADF11E20251C007FA2BA /* Moduls */,
+			);
+			name = RecycleSettings;
+			sourceTree = "<group>";
+		};
+		2F3BADF11E20251C007FA2BA /* Moduls */ = {
+			isa = PBXGroup;
+			children = (
+				2F3BAE051E203EF6007FA2BA /* RecycleSettingsAssembly.swift */,
+				2F3BAE091E20EEC9007FA2BA /* Cell */,
+				2F3BADF41E20253B007FA2BA /* Presenter */,
+				2F3BADF31E202533007FA2BA /* Interactor */,
+				2F3BADF21E20252C007FA2BA /* View */,
+			);
+			name = Moduls;
+			sourceTree = "<group>";
+		};
+		2F3BADF21E20252C007FA2BA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2F3BADFB1E203C08007FA2BA /* RecycleSettingsViewController.swift */,
+				2F3BAE071E20E996007FA2BA /* RecycleSettingsViewControllerProtocol.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		2F3BADF31E202533007FA2BA /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				2F3BADFD1E203E7D007FA2BA /* RecycleSettingsInteractor.swift */,
+				2F3BAE031E203EE1007FA2BA /* RecycleSettingsInteractorProtocol.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		2F3BADF41E20253B007FA2BA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2F3BADFF1E203E9F007FA2BA /* RecycleSettingsPresenter.swift */,
+				2F3BAE011E203EC2007FA2BA /* RecycleSettingsPresenterProtocol.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		2F3BAE091E20EEC9007FA2BA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2F3BAE0A1E20EEF4007FA2BA /* RecycleSettingsTableViewCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		2F414DFD1E1E496000F10538 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2F414DFE1E1E499100F10538 /* Extensions.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		2F88AE6A1E1BC51600FAFA7F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2F88AE681E1BBEDB00FAFA7F /* RecycleTableViewCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		2F88AE6B1E1BD11400FAFA7F /* Moduls */ = {
+			isa = PBXGroup;
+			children = (
+				2F414E041E1E517200F10538 /* RecycleDetailAssembly.swift */,
+				2F88AE6E1E1BD13500FAFA7F /* View */,
+				2F88AE6D1E1BD12B00FAFA7F /* Interactor */,
+				2F88AE6C1E1BD12000FAFA7F /* Presenter */,
+			);
+			name = Moduls;
+			sourceTree = "<group>";
+		};
+		2F88AE6C1E1BD12000FAFA7F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2F414E021E1E514E00F10538 /* RecycleDetailPresenter.swift */,
+				2F414E081E1E51FE00F10538 /* RecycleDetailPresenterProtocol.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		2F88AE6D1E1BD12B00FAFA7F /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				2F414E001E1E513800F10538 /* RecycleDetailInteractor.swift */,
+				2F414E061E1E51D800F10538 /* RecycleDetailInterctorProtocol.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		2F88AE6E1E1BD13500FAFA7F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2F88AE6F1E1BD8F600FAFA7F /* RecycleDetailViewController.swift */,
+				2F414E0A1E1E521B00F10538 /* RecycleDetailViewControllerProtocol.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		2F9AD31E1E1691E400C436D4 = {
+			isa = PBXGroup;
+			children = (
+				2F9AD3291E1691E400C436D4 /* SMLTest */,
+				2F9AD3281E1691E400C436D4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2F9AD3281E1691E400C436D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F9AD3271E1691E400C436D4 /* SMLTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F9AD3291E1691E400C436D4 /* SMLTest */ = {
+			isa = PBXGroup;
+			children = (
+				2F9AD3531E1B969F00C436D4 /* User Interface */,
+				2F414DFD1E1E496000F10538 /* Common */,
+				2F9AD35B1E1B9C5200C436D4 /* Service */,
+				2F9AD3581E1B9A2400C436D4 /* Model */,
+				2F9AD33C1E1B93A700C436D4 /* Recycle */,
+				2F9AD33D1E1B944300C436D4 /* RecycleDetail */,
+				2F3BADF01E2024DC007FA2BA /* RecycleSettings */,
+				2F9AD3311E1691E400C436D4 /* Assets.xcassets */,
+				2F9AD32A1E1691E400C436D4 /* AppDelegate.swift */,
+				2F9AD3331E1691E400C436D4 /* LaunchScreen.storyboard */,
+				2F9AD3361E1691E400C436D4 /* Info.plist */,
+			);
+			path = SMLTest;
+			sourceTree = "<group>";
+		};
+		2F9AD33C1E1B93A700C436D4 /* Recycle */ = {
+			isa = PBXGroup;
+			children = (
+				2F9AD33E1E1B945300C436D4 /* Moduls */,
+			);
+			name = Recycle;
+			sourceTree = "<group>";
+		};
+		2F9AD33D1E1B944300C436D4 /* RecycleDetail */ = {
+			isa = PBXGroup;
+			children = (
+				2F88AE6B1E1BD11400FAFA7F /* Moduls */,
+			);
+			name = RecycleDetail;
+			sourceTree = "<group>";
+		};
+		2F9AD33E1E1B945300C436D4 /* Moduls */ = {
+			isa = PBXGroup;
+			children = (
+				2F9AD3451E1B954800C436D4 /* RecycleAssembly.swift */,
+				2F88AE6A1E1BC51600FAFA7F /* Cell */,
+				2F9AD34A1E1B95DE00C436D4 /* Routing */,
+				2F9AD3491E1B95D300C436D4 /* Presenter */,
+				2F9AD3481E1B95C800C436D4 /* Interactor */,
+				2F9AD3471E1B95BE00C436D4 /* View */,
+			);
+			name = Moduls;
+			sourceTree = "<group>";
+		};
+		2F9AD3471E1B95BE00C436D4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2F9AD3511E1B969200C436D4 /* RecycleTableViewControllerProtocol.swift */,
+				2F9AD3561E1B980A00C436D4 /* RecycleTableViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		2F9AD3481E1B95C800C436D4 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				2F9AD33F1E1B950700C436D4 /* RecycleInteractor.swift */,
+				2F9AD34F1E1B967A00C436D4 /* RecycleInteractorProtocol.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		2F9AD3491E1B95D300C436D4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2F9AD3431E1B953300C436D4 /* RecyclePresenter.swift */,
+				2F9AD34D1E1B965C00C436D4 /* RecyclePresenterProtocol.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		2F9AD34A1E1B95DE00C436D4 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				2F9AD34B1E1B963200C436D4 /* RecycleRoutingProtocol.swift */,
+				2F9AD3411E1B951C00C436D4 /* RecycleRouting.swift */,
+			);
+			name = Routing;
+			sourceTree = "<group>";
+		};
+		2F9AD3531E1B969F00C436D4 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				2F65F66E1E211F0A0069B359 /* Recycle.storyboard */,
+			);
+			name = "User Interface";
+			sourceTree = "<group>";
+		};
+		2F9AD3581E1B9A2400C436D4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2F9AD3591E1B9A3700C436D4 /* RecycleModel.swift */,
+				2F65F6711E2126860069B359 /* LogModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		2F9AD35B1E1B9C5200C436D4 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				2F9AD35C1E1B9C6C00C436D4 /* RecycleDataManager.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F9AD3261E1691E400C436D4 /* SMLTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F9AD3391E1691E400C436D4 /* Build configuration list for PBXNativeTarget "SMLTest" */;
+			buildPhases = (
+				2F9AD3231E1691E400C436D4 /* Sources */,
+				2F9AD3241E1691E400C436D4 /* Frameworks */,
+				2F9AD3251E1691E400C436D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SMLTest;
+			productName = SMLTest;
+			productReference = 2F9AD3271E1691E400C436D4 /* SMLTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F9AD31F1E1691E400C436D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Alexander Salkov";
+				TargetAttributes = {
+					2F9AD3261E1691E400C436D4 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 2F9AD3221E1691E400C436D4 /* Build configuration list for PBXProject "SMLTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2F9AD31E1E1691E400C436D4;
+			productRefGroup = 2F9AD3281E1691E400C436D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F9AD3261E1691E400C436D4 /* SMLTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F9AD3251E1691E400C436D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F9AD3351E1691E400C436D4 /* LaunchScreen.storyboard in Resources */,
+				2F9AD3321E1691E400C436D4 /* Assets.xcassets in Resources */,
+				2F65F6701E211F0A0069B359 /* Recycle.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F9AD3231E1691E400C436D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F9AD35A1E1B9A3700C436D4 /* RecycleModel.swift in Sources */,
+				2F3BAE001E203E9F007FA2BA /* RecycleSettingsPresenter.swift in Sources */,
+				2F9AD3501E1B967A00C436D4 /* RecycleInteractorProtocol.swift in Sources */,
+				2F9AD3401E1B950700C436D4 /* RecycleInteractor.swift in Sources */,
+				2F9AD35D1E1B9C6C00C436D4 /* RecycleDataManager.swift in Sources */,
+				2F414E051E1E517200F10538 /* RecycleDetailAssembly.swift in Sources */,
+				2F3BAE061E203EF6007FA2BA /* RecycleSettingsAssembly.swift in Sources */,
+				2F9AD3571E1B980A00C436D4 /* RecycleTableViewController.swift in Sources */,
+				2F88AE691E1BBEDB00FAFA7F /* RecycleTableViewCell.swift in Sources */,
+				2F3BADFC1E203C08007FA2BA /* RecycleSettingsViewController.swift in Sources */,
+				2F414E091E1E51FE00F10538 /* RecycleDetailPresenterProtocol.swift in Sources */,
+				2F3BADFE1E203E7D007FA2BA /* RecycleSettingsInteractor.swift in Sources */,
+				2F3BAE041E203EE1007FA2BA /* RecycleSettingsInteractorProtocol.swift in Sources */,
+				2F9AD34E1E1B965C00C436D4 /* RecyclePresenterProtocol.swift in Sources */,
+				2F9AD34C1E1B963200C436D4 /* RecycleRoutingProtocol.swift in Sources */,
+				2F3BAE081E20E996007FA2BA /* RecycleSettingsViewControllerProtocol.swift in Sources */,
+				2F9AD3421E1B951C00C436D4 /* RecycleRouting.swift in Sources */,
+				2F414E031E1E514E00F10538 /* RecycleDetailPresenter.swift in Sources */,
+				2F9AD3521E1B969200C436D4 /* RecycleTableViewControllerProtocol.swift in Sources */,
+				2F414DFF1E1E499100F10538 /* Extensions.swift in Sources */,
+				2F9AD3461E1B954800C436D4 /* RecycleAssembly.swift in Sources */,
+				2F3BAE021E203EC2007FA2BA /* RecycleSettingsPresenterProtocol.swift in Sources */,
+				2F88AE701E1BD8F600FAFA7F /* RecycleDetailViewController.swift in Sources */,
+				2F414E0B1E1E521B00F10538 /* RecycleDetailViewControllerProtocol.swift in Sources */,
+				2F3BAE0B1E20EEF4007FA2BA /* RecycleSettingsTableViewCell.swift in Sources */,
+				2F414E071E1E51D800F10538 /* RecycleDetailInterctorProtocol.swift in Sources */,
+				2F65F6721E2126860069B359 /* LogModel.swift in Sources */,
+				2F414E011E1E513800F10538 /* RecycleDetailInteractor.swift in Sources */,
+				2F9AD32B1E1691E400C436D4 /* AppDelegate.swift in Sources */,
+				2F9AD3441E1B953300C436D4 /* RecyclePresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2F65F66E1E211F0A0069B359 /* Recycle.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F65F66F1E211F0A0069B359 /* Base */,
+			);
+			name = Recycle.storyboard;
+			sourceTree = "<group>";
+		};
+		2F9AD3331E1691E400C436D4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F9AD3341E1691E400C436D4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2F9AD3371E1691E400C436D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2F9AD3381E1691E400C436D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F9AD33A1E1691E400C436D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SMLTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AlexanderSalkov.SMLTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2F9AD33B1E1691E400C436D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SMLTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AlexanderSalkov.SMLTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F9AD3221E1691E400C436D4 /* Build configuration list for PBXProject "SMLTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F9AD3371E1691E400C436D4 /* Debug */,
+				2F9AD3381E1691E400C436D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F9AD3391E1691E400C436D4 /* Build configuration list for PBXNativeTarget "SMLTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F9AD33A1E1691E400C436D4 /* Debug */,
+				2F9AD33B1E1691E400C436D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2F9AD31F1E1691E400C436D4 /* Project object */;
+}
